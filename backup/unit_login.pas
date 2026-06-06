@@ -22,6 +22,7 @@ type
     Label2: TLabel;
     Conn_Biblioteca: TZConnection;
     QueryLogin: TZQuery;
+    procedure ButtonCadastrarClick(Sender: TObject);
     procedure ButtonEntrarClick(Sender: TObject);
   private
 
@@ -36,7 +37,7 @@ implementation
 
 {$R *.lfm}
 
-uses unit_livros;
+uses unit_leituras, unit_usuarios;
 
 { TFormLogin }
 
@@ -51,8 +52,8 @@ begin
         begin
           messagedlg('Login realizado com sucesso!', mtInformation, [mbOK], 0);
 
-          FormLivro.Show;
-        end;
+          FormLeituras.Show;
+        end
      else
          begin
            messagedlg('Usuário ou senha incorretos!', mtError, [mbOK], 0);
@@ -60,6 +61,11 @@ begin
            EditEmail.clear;
            EditSenha.clear;
          end;
+end;
+
+procedure TFormLogin.ButtonCadastrarClick(Sender: TObject);
+begin
+    FormCadastro.Show;
 end;
 
 end.

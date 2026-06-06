@@ -1,0 +1,8 @@
+object FormCadastro: TFormCadastro
+  Left = 261
+  Height = 240
+  Top = 121
+  Width = 320
+  Caption = 'Cadastro'
+  LCLVersion = '4.6.0.0'
+end

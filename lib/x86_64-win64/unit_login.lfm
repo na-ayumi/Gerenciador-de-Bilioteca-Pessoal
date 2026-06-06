@@ -63,6 +63,7 @@ object FormLogin: TFormLogin
       Width = 85
       Caption = 'Cadastrar'
       TabOrder = 3
+      OnClick = ButtonCadastrarClick
     end
   end
   object Conn_Biblioteca: TZConnection

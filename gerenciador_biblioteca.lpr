@@ -10,8 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, unit_login, zcomponent, unit_livros, unit_usuarios
-  { you can add units after this };
+  Forms, unit_login, zcomponent, unit_livros, unit_usuarios, unit_leituras;
 
 {$R *.res}
 
@@ -23,8 +22,9 @@ begin
   {$POP}
   Application.Initialize;
   Application.CreateForm(TFormLogin, FormLogin);
-  Application.CreateForm(TFormLivro, FormLivro);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormLivros, FormLivros);
+  Application.CreateForm(TFormCadastro, FormCadastro);
+  Application.CreateForm(TFormLeituras, FormLeituras);
   Application.Run;
 end.
 

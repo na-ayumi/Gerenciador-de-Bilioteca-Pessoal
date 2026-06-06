@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
 
 type
-  TFormLivro = class(TForm)
+  TFormLivros = class(TForm)
   private
 
   public
@@ -16,7 +16,7 @@ type
   end;
 
 var
-  FormLivro: TFormLivro;
+  FormLivros: TFormLivros;
 
 implementation
 

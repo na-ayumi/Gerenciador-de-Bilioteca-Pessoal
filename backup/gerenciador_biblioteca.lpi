@@ -50,6 +50,19 @@
         <Filename Value="unit_livros.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormLivro"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_usuarios.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCadastro"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_leituras.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormLeituras"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
     </Units>

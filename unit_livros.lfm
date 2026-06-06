@@ -1,8 +1,8 @@
-object FormLivro: TFormLivro
+object FormLivros: TFormLivros
   Left = 261
-  Height = 240
+  Height = 578
   Top = 121
-  Width = 320
-  Caption = 'Minhas Leituras'
+  Width = 1172
+  Caption = 'Biblioteca Pessoal'
   LCLVersion = '4.6.0.0'
 end

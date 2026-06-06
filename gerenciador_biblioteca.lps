@@ -8,19 +8,19 @@
       <Unit>
         <Filename Value="gerenciador_biblioteca.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="26" Y="25"/>
         <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="unit_login.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormLogin"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="33"/>
-        <CursorPos X="12" Y="55"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="39"/>
+        <CursorPos X="21" Y="56"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -28,9 +28,10 @@
       <Unit>
         <Filename Value="unit_livros.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="FormLivro"/>
+        <ComponentName Value="FormLivros"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="3"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -38,16 +39,47 @@
       <Unit>
         <Filename Value="unit_usuarios.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="FormCadastro"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="78" Y="14"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_leituras.pas"/>
+        <ComponentName Value="FormLivro"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="unit_livros"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_leituras.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="13"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_leituras.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11" Y="4"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit_leituras.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormLeituras"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="5">
+    <JumpHistory HistoryIndex="7">
       <Position>
         <Filename Value="unit_login.pas"/>
       </Position>
@@ -70,6 +102,14 @@
       <Position>
         <Filename Value="unit_login.pas"/>
         <Caret Line="62" Column="14" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="unit_login.pas"/>
+        <Caret Line="56" Column="12" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="unit_login.pas"/>
+        <Caret Line="63" Column="41" TopLine="39"/>
       </Position>
     </JumpHistory>
     <RunParams>
