@@ -1,0 +1,109 @@
+object FormLogin: TFormLogin
+  Left = 261
+  Height = 566
+  Top = 121
+  Width = 1111
+  Caption = 'Login'
+  ClientHeight = 566
+  ClientWidth = 1111
+  LCLVersion = '4.6.0.0'
+  object GroupBoxLogin: TGroupBox
+    Left = 359
+    Height = 311
+    Top = 146
+    Width = 366
+    ClientHeight = 291
+    ClientWidth = 362
+    TabOrder = 0
+    object EditEmail: TEdit
+      Left = 51
+      Height = 23
+      Top = 114
+      Width = 253
+      TabOrder = 0
+      TextHint = 'Digite seu e-mail'
+    end
+    object EditSenha: TEdit
+      Left = 51
+      Height = 23
+      Top = 172
+      Width = 252
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 1
+      TextHint = 'Digite sua senha'
+    end
+    object Label1: TLabel
+      Left = 51
+      Height = 15
+      Top = 88
+      Width = 34
+      Caption = 'E-mail'
+    end
+    object Label2: TLabel
+      Left = 51
+      Height = 15
+      Top = 150
+      Width = 32
+      Caption = 'Senha'
+    end
+    object ButtonEntrar: TButton
+      Left = 51
+      Height = 25
+      Top = 224
+      Width = 91
+      Caption = 'Entrar'
+      TabOrder = 2
+      OnClick = ButtonEntrarClick
+    end
+    object ButtonCadastrar: TButton
+      Left = 218
+      Height = 25
+      Top = 224
+      Width = 85
+      Caption = 'Cadastrar'
+      TabOrder = 3
+    end
+  end
+  object Conn_Biblioteca: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP'
+    )
+    Connected = True
+    DisableSavepoints = False
+    HostName = 'localhost'
+    Port = 5432
+    Database = 'biblioteca_pessoal'
+    User = 'postgres'
+    Password = '1234'
+    Protocol = 'postgresql'
+    LibraryLocation = 'C:\PostgreSQL\17\bin\libpq.dll'
+    Left = 80
+    Top = 167
+  end
+  object QueryLogin: TZQuery
+    Connection = Conn_Biblioteca
+    SQL.Strings = (
+      'select * from usuarios'
+      'where email_usuario = :email'
+      'and senha_hash = :senha'
+    )
+    Params = <    
+      item
+        Name = 'email'
+      end    
+      item
+        Name = 'senha'
+      end>
+    Left = 80
+    Top = 248
+    ParamData = <    
+      item
+        Name = 'email'
+      end    
+      item
+        Name = 'senha'
+      end>
+  end
+end
