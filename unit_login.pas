@@ -67,6 +67,7 @@ end;
 procedure TFormLogin.ButtonCadastrarClick(Sender: TObject);
 begin
     FormCadastro.Show;
+    Self.Hide;
 end;
 
 end.

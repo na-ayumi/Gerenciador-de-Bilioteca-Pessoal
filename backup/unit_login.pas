@@ -53,6 +53,7 @@ begin
           messagedlg('Login realizado com sucesso!', mtInformation, [mbOK], 0);
 
           FormLeituras.Show;
+          Self.Hide;
         end
      else
          begin
