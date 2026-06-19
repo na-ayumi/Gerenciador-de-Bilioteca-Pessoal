@@ -111,8 +111,35 @@ object FormCadastro: TFormCadastro
       end>
   end
   object ZQueryInserirUsuario: TZQuery
-    Params = <>
+    Connection = FormLogin.Conn_Biblioteca
+    SQL.Strings = (
+      'insert into usuarios'
+      ''
+      '(nome_usuario, email_usuario, senha_hash)'
+      ''
+      'values (:nome, :email, :senha)'
+    )
+    Params = <    
+      item
+        Name = 'nome'
+      end    
+      item
+        Name = 'email'
+      end    
+      item
+        Name = 'senha'
+      end>
     Left = 56
     Top = 131
+    ParamData = <    
+      item
+        Name = 'nome'
+      end    
+      item
+        Name = 'email'
+      end    
+      item
+        Name = 'senha'
+      end>
   end
 end

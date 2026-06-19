@@ -5,7 +5,8 @@ unit unit_usuarios;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
+  ZDataset;
 
 type
 
@@ -22,6 +23,8 @@ type
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
+    ZQueryInserirUsuario: TZQuery;
+    ZQueryVerificarEmail: TZQuery;
     procedure ButtonCadastrarClick(Sender: TObject);
   private
 
@@ -63,7 +66,17 @@ begin
           ShowMessage('As senhas não conferem.');
           EditConfirmarSenha.SetFocus;
         end;
+
+     ZQueryVerificarEmail.Close;
+     ZQueryVerificarEmail.ParamByName('email').AsString := EditEmailUsuario.Text;
+     ZQueryVerificarEmail.Open;
+
+     if not ZQueryVerificarEmail.IsEmpty then
+        begin
+           messagedlg('E-mail já cadastrado!', mtError, [mbOK], 0);
+        end;
 end;
+
 
 end.
 

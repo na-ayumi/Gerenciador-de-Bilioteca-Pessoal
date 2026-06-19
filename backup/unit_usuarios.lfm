@@ -29,6 +29,8 @@ object FormCadastro: TFormCadastro
     Height = 23
     Top = 241
     Width = 226
+    EchoMode = emPassword
+    PasswordChar = '*'
     TabOrder = 2
     TextHint = 'Digite sua senha'
   end
@@ -37,6 +39,9 @@ object FormCadastro: TFormCadastro
     Height = 23
     Top = 293
     Width = 226
+    EchoMode = emPassword
+    ParentShowHint = False
+    PasswordChar = '*'
     TabOrder = 3
     TextHint = 'Digite sua senha novamente'
   end
@@ -84,5 +89,30 @@ object FormCadastro: TFormCadastro
     Width = 75
     Caption = 'Cancelar'
     TabOrder = 5
+  end
+  object ZQueryVerificarEmail: TZQuery
+    Connection = FormLogin.Conn_Biblioteca
+    SQL.Strings = (
+      'select u.id_usuario '
+      ''
+      'from usuarios u'
+      ''
+      'where u.email_usuario = :email'
+    )
+    Params = <    
+      item
+        Name = 'email'
+      end>
+    Left = 56
+    Top = 66
+    ParamData = <    
+      item
+        Name = 'email'
+      end>
+  end
+  object ZQueryInserirUsuario: TZQuery
+    Params = <>
+    Left = 56
+    Top = 131
   end
 end

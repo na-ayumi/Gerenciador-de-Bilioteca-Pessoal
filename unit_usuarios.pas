@@ -66,7 +66,17 @@ begin
           ShowMessage('As senhas não conferem.');
           EditConfirmarSenha.SetFocus;
         end;
+
+     ZQueryVerificarEmail.Close;
+     ZQueryVerificarEmail.ParamByName('email').AsString := EditEmailUsuario.Text;
+     ZQueryVerificarEmail.Open;
+
+     if not ZQueryVerificarEmail.IsEmpty then
+        begin
+           messagedlg('E-mail já cadastrado!', mtError, [mbOK], 0);
+        end;
 end;
+
 
 end.
 
