@@ -1,8 +1,88 @@
 object FormCadastro: TFormCadastro
   Left = 261
-  Height = 240
+  Height = 453
   Top = 121
-  Width = 320
+  Width = 521
   Caption = 'Cadastro'
+  ClientHeight = 453
+  ClientWidth = 521
   LCLVersion = '4.6.0.0'
+  object EditNome: TEdit
+    Left = 138
+    Height = 23
+    Top = 138
+    Width = 226
+    ParentShowHint = False
+    TabOrder = 0
+    TextHint = 'Digite seu nome completo'
+  end
+  object EditEmailUsuario: TEdit
+    Left = 138
+    Height = 23
+    Top = 190
+    Width = 226
+    TabOrder = 1
+    TextHint = 'Digite seu e-mail'
+  end
+  object EditSenhaUsuario: TEdit
+    Left = 138
+    Height = 23
+    Top = 241
+    Width = 226
+    TabOrder = 2
+    TextHint = 'Digite sua senha'
+  end
+  object EditConfirmarSenha: TEdit
+    Left = 138
+    Height = 23
+    Top = 293
+    Width = 226
+    TabOrder = 3
+    TextHint = 'Digite sua senha novamente'
+  end
+  object Label1: TLabel
+    Left = 138
+    Height = 15
+    Top = 113
+    Width = 36
+    Caption = 'Nome:'
+  end
+  object Label2: TLabel
+    Left = 140
+    Height = 15
+    Top = 168
+    Width = 37
+    Caption = 'E-mail:'
+  end
+  object Label3: TLabel
+    Left = 140
+    Height = 15
+    Top = 222
+    Width = 35
+    Caption = 'Senha:'
+  end
+  object Label4: TLabel
+    Left = 140
+    Height = 15
+    Top = 270
+    Width = 108
+    Caption = 'Confirme sua senha:'
+  end
+  object ButtonCadastrar: TButton
+    Left = 157
+    Height = 25
+    Top = 345
+    Width = 76
+    Caption = 'Cadastrar'
+    TabOrder = 4
+    OnClick = ButtonCadastrarClick
+  end
+  object ButtonCancelar: TButton
+    Left = 258
+    Height = 25
+    Top = 345
+    Width = 75
+    Caption = 'Cancelar'
+    TabOrder = 5
+  end
 end
