@@ -26,6 +26,7 @@ type
     ZQueryInserirUsuario: TZQuery;
     ZQueryVerificarEmail: TZQuery;
     procedure ButtonCadastrarClick(Sender: TObject);
+    procedure ButtonCancelarClick(Sender: TObject);
   private
 
   public
@@ -38,6 +39,8 @@ var
 implementation
 
 {$R *.lfm}
+
+uses unit_login;
 
 { TFormCadastro }
 
@@ -75,6 +78,23 @@ begin
         begin
            messagedlg('E-mail já cadastrado!', mtError, [mbOK], 0);
         end;
+
+     ZQueryInserirUsuario.Close;
+     ZQueryInserirUsuario.ParamByName('nome').AsString := EditNome.Text;
+     ZQueryInserirUsuario.ParamByName('email').AsString := EditEmailUsuario.Text;
+     ZQueryInserirUsuario.ParamByName('senha').AsString := EditSenhaUsuario.Text;
+     ZQueryInserirUsuario.Open;
+
+     ZQueryInserirUsuario.ExecSQL;
+     messagedlg('Cadastro realizado com sucesso!', mtInformation, [mbOK], 0);
+
+     FormCadastro.Close;
+end;
+
+procedure TFormCadastro.ButtonCancelarClick(Sender: TObject);
+begin
+  FormCadastro.Close;
+  FormLogin.Show;
 end;
 
 

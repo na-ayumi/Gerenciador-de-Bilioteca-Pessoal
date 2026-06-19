@@ -102,6 +102,9 @@
       <Item>
         <Name Value="EFOpenError"/>
       </Item>
+      <Item>
+        <Name Value="EZSQLException"/>
+      </Item>
     </Exceptions>
   </Debugging>
 </CONFIG>

@@ -89,6 +89,7 @@ object FormCadastro: TFormCadastro
     Width = 75
     Caption = 'Cancelar'
     TabOrder = 5
+    OnClick = ButtonCancelarClick
   end
   object ZQueryVerificarEmail: TZQuery
     Connection = FormLogin.Conn_Biblioteca
