@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="26" Y="25"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="unit_login.pas"/>
@@ -20,7 +20,7 @@
         <ResourceBaseClass Value="Form"/>
         <TopLine Value="19"/>
         <CursorPos X="11" Y="60"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -30,8 +30,11 @@
         <ComponentName Value="FormLivros"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="26"/>
+        <CursorPos X="32" Y="52"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -41,11 +44,10 @@
         <ComponentName Value="FormCadastro"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="69"/>
+        <TopLine Value="18"/>
         <CursorPos X="17" Y="97"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -56,24 +58,21 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="22"/>
+        <CursorPos X="21" Y="36"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="C:\Componentes\Zeos\src\dbc\ZDbcPostgreSql.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="633"/>
+        <CursorPos Y="670"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="unit_usuarios.pas"/>
-        <Caret Line="21" Column="78"/>
-      </Position>
-      <Position>
-        <Filename Value="unit_usuarios.pas"/>
-        <Caret Line="20" Column="78"/>
-      </Position>
-      <Position>
-        <Filename Value="unit_usuarios.pas"/>
-        <Caret Line="21" Column="78"/>
-      </Position>
       <Position>
         <Filename Value="unit_usuarios.pas"/>
         <Caret Line="23" Column="78"/>
@@ -180,7 +179,17 @@
       </Position>
       <Position>
         <Filename Value="unit_usuarios.pas"/>
-        <Caret Line="97" Column="17" TopLine="68"/>
+        <Caret Line="97" Column="17" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="unit_livros.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="unit_livros.pas"/>
+        <Caret Line="9" Column="37"/>
+      </Position>
+      <Position>
+        <Filename Value="unit_leituras.pas"/>
       </Position>
     </JumpHistory>
     <RunParams>

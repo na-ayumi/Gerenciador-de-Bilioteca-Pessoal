@@ -4,5 +4,16 @@ object FormLeituras: TFormLeituras
   Top = 121
   Width = 320
   Caption = 'Minhas Leituras'
+  ClientHeight = 240
+  ClientWidth = 320
   LCLVersion = '4.6.0.0'
+  object Adicionar: TButton
+    Left = 113
+    Height = 25
+    Top = 95
+    Width = 75
+    Caption = 'Adicionar'
+    TabOrder = 0
+    OnClick = AdicionarClick
+  end
 end

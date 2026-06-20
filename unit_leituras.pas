@@ -5,10 +5,15 @@ unit unit_leituras;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
 
 type
+
+  { TFormLeituras }
+
   TFormLeituras = class(TForm)
+    Adicionar: TButton;
+    procedure AdicionarClick(Sender: TObject);
   private
 
   public
@@ -21,6 +26,15 @@ var
 implementation
 
 {$R *.lfm}
+
+uses unit_livros;
+
+{ TFormLeituras }
+
+procedure TFormLeituras.AdicionarClick(Sender: TObject);
+begin
+    FormLivros.Show;
+end;
 
 end.
 

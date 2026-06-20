@@ -2,7 +2,35 @@ object FormLivros: TFormLivros
   Left = 261
   Height = 578
   Top = 121
-  Width = 1172
+  Width = 824
   Caption = 'Biblioteca Pessoal'
+  ClientHeight = 578
+  ClientWidth = 824
   LCLVersion = '4.6.0.0'
+  object EditBuscar: TEdit
+    Left = 101
+    Height = 23
+    Top = 42
+    Width = 463
+    TabOrder = 0
+    TextHint = 'Digite o nome do livro'
+  end
+  object ButtonBuscar: TButton
+    Left = 587
+    Height = 25
+    Top = 42
+    Width = 75
+    Caption = 'Buscar'
+    TabOrder = 1
+    OnClick = ButtonBuscarClick
+  end
+  object ScrollBoxLivros: TScrollBox
+    Left = 5
+    Height = 498
+    Top = 85
+    Width = 810
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    TabOrder = 2
+  end
 end

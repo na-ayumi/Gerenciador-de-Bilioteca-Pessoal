@@ -1,8 +1,8 @@
-object Form1: TForm1
+object FormLeituras: TFormLeituras
   Left = 261
   Height = 240
   Top = 121
   Width = 320
-  Caption = 'Form1'
+  Caption = 'Minhas Leituras'
   LCLVersion = '4.6.0.0'
 end
